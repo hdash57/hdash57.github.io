@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0; 
+    padding: 0; 
+    scroll-behavior: smooth; 
+    background-color: #121212; 
+    color: #e0e0e0; 
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background: linear-gradient(90deg, #3a3a3a, #121212); 
+    text-align: center;
+    color: #ffffff; 
+    width: 100% !important;
+}
+
+header {
+    display: inline;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #e0e0e0; 
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav li {  
+    list-style-type: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: #ff6b6b; 
+}
+
+nav {
+    background-color: #1e1e1e; 
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    flex: 5;
+    width: 75%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+    width: 25%;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+    main aside {
+        align-self: stretch;
+    }
+}
+
+.card {
+    background-color: #1e1e1e; 
+    color: #e0e0e0; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.image-container {
+    max-width: 100%;
+    overflow: hidden; 
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+  
+    object-fit: cover;
+    object-position: center;
+  }
+.back-button-container {
+    text-align: right; 
+    margin-top: 20px; 
+}
+
+.back-button {
+    display: inline-block; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;      
+    padding: 10px 20px;          
+    background-color: #ff6b6b; 
+    color: #ffffff;                 
+    text-decoration: none;       
+    border-radius: 5px;          
+    font-weight: bold;           
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.back-button:hover {
+    background-color: #d94343; 
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); 
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile p {
+    text-align: center;     
+}
+
+.profile img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+h2, h3 {
+    color: #ff6b6b; 
+}
+
+figure + p {
+    text-align: justify;
+}
+
+h2 + p {
+    text-align: justify;
+}
+
+.informasi {
+    margin: 10px 30px;
+}
+
+
+footer {
+    padding: 20px;
+    color: #e0e0e0; 
+    background-color: #1e1e1e; 
+    text-align: center !important;
+    font-weight: bold;
+    margin: 0;
+    width: 100% !important;
+}
+
+.end, a[href="#back"] {
+    color: aliceblue !important;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #1e1e1e; 
+    color: #e0e0e0; 
+}
+
+table tr:hover {
+    background-color: #282828; 
+}
+
+table, th, td {
+    border: 2px solid #ddd;
+    padding: 8px;
+}
